@@ -1,6 +1,7 @@
 import discord
 from discord.ext import commands
 import os
+from dotenv import load_dotenv
 
 # Constant for batch size
 MAX_FILES_PER_MESSAGE = 10
@@ -10,6 +11,7 @@ intents = discord.Intents.default()
 intents.message_content = True
 bot = commands.Bot(command_prefix="!", intents=intents)
 
+load_dotenv()
 @bot.event
 async def on_ready():
     print(f"Logged in as {bot.user}")
