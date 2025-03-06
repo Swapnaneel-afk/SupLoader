@@ -1,6 +1,7 @@
 # SupLoader
 pip install discord.py python-dotenv
 
+
 make a bot in discord dev thing 
 enable the file upload and related permissions
 get ur bot token 
